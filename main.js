@@ -35,4 +35,6 @@
  		$("#result_money").val(totalSavings.toFixed(2)).css("font-weight", "bold");
  		$("#result_time").val(totalTime).css("font-weight", "bold");
  	});
+
+
  });
