@@ -66,8 +66,8 @@ License: none (public domain)
 
                         .photo-container {
                             display: block;
-                            width: 25%;
-                            float: left;
+                            /*width: 25%;
+                            float: left;*/
                             padding: 10px;
                             position: relative;
                             /*z-index: 1;*/
@@ -93,7 +93,10 @@ License: none (public domain)
                         }
 
                         .vegetable img {
-                            width: 100%;
+                            /*width: 100%;*/
+                            width: 40%;
+                            float: left;
+                            padding: 10px;
                         }
 
                         .vegetable img.whole {
@@ -136,24 +139,53 @@ License: none (public domain)
                             background-color: #F0F0F0;
                             height: 15px;
                         }
+
+                        .photos {
+                            position: relative;
+                            width: 100%;
+                        }
+
+                        img {
+                            width: 100%;
+                            margin: 0 auto;
+                        }
                         /* Tablet/Desktop overrides */
 
                         @media(min-width: 681px) {
                             /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
                             .photo-container {
                                 display: block;
-                                width: 25%;
+                                /*width: 25%;
+                                float: left;*/
+                                position: relative;
+                                margin-left: 20px;
+                            }
+                            img.vegetable {
+                                /*width: 100%;*/
+                                width: 30%;
                                 float: left;
+                                padding: 5px;
                             }
                             .lede, .main-text {
                                 max-width: 640px;
                                 margin-right: auto;
                                 margin-left: auto;
                             }
+                            .container {
+                                max-width: 968px;
+                                display: block;
+                                margin: 0 auto;
+                            }
                             .chart {
                                 padding: 30px;
                             }
-                            @media(min-width: 729px) {
-                                /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+                        }
+
+                        @media(min-width: 729px) {
+                            /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+                            .container {
+                                max-width: 968px;
+                                display: block;
+                                margin: 0 auto;
                             }
                         }
