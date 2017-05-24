@@ -1,140 +1,157 @@
-    /*
+                        /*
 This is a good layout for a mobile-first CSS template.
 Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
 Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
 Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
 You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
 */
-    /* http://meyerweb.com/eric/tools/css/reset/
+                        /* http://meyerweb.com/eric/tools/css/reset/
 v2.0 | 20110126
 License: none (public domain)
 */
 
-    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        vertical-align: baseline;
-    }
-    /* HTML5 display-role reset for older browsers */
+                        html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+                            margin: 0;
+                            padding: 0;
+                            border: 0;
+                            vertical-align: baseline;
+                        }
+                        /* HTML5 display-role reset for older browsers */
 
-    article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-        display: block;
-    }
+                        article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+                            display: block;
+                        }
 
-    body {
-        line-height: 1.2;
-    }
-    /* Start your base/mobile styles here */
+                        body {
+                            line-height: 1.2;
+                            padding: 10px;
+                        }
+                        /* Start your base/mobile styles here */
 
-    html, body {
-        font-size: 16px;
-        font-family: 'Arsenal', sans-serif;
-        /*  Sets default font-size to 16px, ensuring 1em = 16px; */
-    }
+                        html, body {
+                            font-size: 16px;
+                            font-family: 'Arsenal', sans-serif;
+                            margin: auto;
+                            width: 100%;
+                            /*  Sets default font-size to 16px, ensuring 1em = 16px; */
+                        }
 
-    .lede, h1 {
-        margin: 10px;
-        padding: 10px;
-        font-size: 1.1em;
-    }
+                        .lede, h1 {
+                            margin: 10px;
+                            font-size: 1.1em;
+                            padding: 10px;
+                        }
+                        
+                        h1 {
+                            padding-bottom: 10px;
+                            font-size: 2.1em;
+                        }
 
-    .byline {
-        font-family: 'Arsenal', sans-serif;
-        margin: 10px;
-        padding: 10px;
-        margin-top: -20px;
-    }
+                        .byline {
+                            font-family: 'Arsenal', sans-serif;
+                            margin: 10px;
+                            margin-top: -20px;
+                        }
 
-    .gray {
-        color: #808080;
-        background: none;
-    }
+                        .gray {
+                            color: #808080;
+                            background: none;
+                        }
 
-    .main-text {
-        font-size: 16px;
-        margin: 10px;
-        padding: 10px;
-    }
+                        .main-text {
+                            font-size: 16px;
+                            margin: 10px;
+                        }
 
-    .photo-container {
-        width: 45%;
-        margin: 0 auto;
-        padding: 10px;
-        position: relative;
-        /*z-index: 1;*/
-    }
+                        .photo-container {
+                            display: block;
+                            width: 33%;
+                            float: left;
+                            position: relative;
+                            /*z-index: 1;*/
+                        }
 
-    .caption {
-        color: gray;
-        font-size: 1em;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
+                        .caption {
+                            color: gray;
+                            font-size: 1em;
+                            margin-left: 10px;
+                            margin-right: 10px;
+                        }
 
-    .credit {
-        font-weight: 400;
-    }
+                        .credit {
+                            font-weight: 400;
+                        }
 
-    #totals {
-        position: sticky;
-        top: 0;
-        width: 100%;
-        z-index: 1020;
-        background: white;
-    }
+                        #totals {
+                            position: sticky;
+                            top: 0;
+                            width: 100%;
+                            z-index: 1020;
+                            background: white;
+                        }
 
-    .vegetable img {
-        width: 100%;
-    }
+                        .vegetable img {
+                            width: 100%;
+                        }
 
-    .vegetable img.whole {
-        display: block;
-    }
+                        .vegetable img.whole {
+                            display: block;
+                        }
 
-    .vegetable img.chopped {
-        display: none;
-    }
+                        .vegetable img.chopped {
+                            display: none;
+                        }
 
-    .vegetable.active img.whole {
-        display: none;
-    }
+                        .vegetable.active img.whole {
+                            display: none;
+                        }
 
-    .vegetable.active img.chopped {
-        display: block;
-    }
+                        .vegetable.active img.chopped {
+                            display: block;
+                        }
 
-    .sources {
-        font-size: 14px;
-        margin: 10px;
-        padding: 10px;
-    }
+                        .chart {
+                            padding: 10px;
+                        }
 
-    h1 {
-        padding-bottom: 10px;
-        font-size: 2.1em;
-    }
+                        .sources {
+                            font-size: 14px;
+                            margin: 10px;
+                            padding: 10px;
+                        }
 
-    a {
-        text-decoration: none;
-        color: #0099cc;
-    }
+                        a {
+                            text-decoration: none;
+                            color: #0099cc;
+                        }
 
-    a:hover {
-        text-decoration: underline;
-        color: #808080
-    }
+                        a:hover {
+                            text-decoration: underline;
+                            color: #808080
+                        }
 
-    .decoration {
-        background-color: #F0F0F0;
-        height: 15px;
-    }
-    /* Tablet/Desktop overrides */
+                        .decoration {
+                            background-color: #F0F0F0;
+                            height: 15px;
+                        }
+                        /* Tablet/Desktop overrides */
 
-    @media(min-width: 681px) {
-        /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
-    }
-
-    @media(min-width: 729px) {
-        /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
-    }
+                        @media(min-width: 681px) {
+                            /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+                            .photo-container {
+                                display: block;
+                                width: 25%;
+                                float: left;
+                            }
+                            .lede, .main-text {
+                                max-width: 640px;
+                                margin-right: auto;
+                                margin-left: auto;
+                            }
+                            .chart {
+                                padding: 30px;
+                            }
+                            @media(min-width: 729px) {
+                                /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+                            }
+                        }
